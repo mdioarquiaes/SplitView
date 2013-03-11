@@ -24,7 +24,7 @@
 
 	<icon src="blurry.png" gap:role="default" />
 
-    <gap:splash src="weirdo.png" />
+  <gap:splash src="splash_arquia.png" />
 	
 	<feature name="http://api.phonegap.com/1.0/network"/>
 </widget>
