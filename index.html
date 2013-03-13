@@ -28,23 +28,28 @@
         <script type="text/javascript">
             function showLeft(leftdiv, rightdiv, dontslideright, dontslideleft) {
                 $("#splitviewcontainer").simplesplitview("showLeft", leftdiv, rightdiv, dontslideright, dontslideleft);
+                window.focus();
             }
 
             function showRight(rightdiv, dontslideright) {
                 $("#splitviewcontainer").simplesplitview("showRight", rightdiv, dontslideright);
+                window.focus();
             }
 
             function navHome() {
                 $("#splitviewcontainer").simplesplitview("navHome");
+                window.focus();
             }
 
             function navBack() {
                 $("#splitviewcontainer").simplesplitview("navBack");
+                window.focus();
             }
 
             $("#mainpage").live("pageshow", function (event) {
                 document.getElementById("splitviewcontainer").padding = 44;
                 $("#splitviewcontainer").simplesplitview();
+                alert("Neng!");
             });
 		</script>
 	</head>
@@ -75,7 +80,6 @@
                         <li><a onclick="showLeft('bolsaMenu', 'valoresIbex35Panel');">Bolsa</a></li>
                         <li><a onclick="showRight('operBancaLineaPanel');">Operaciones por <br />Banca en Línea</a></li>
 					</ul>
-                    <br /><br /><br /><br /><br /><br />
 				</div>                
 
                 <div class='leftside padsidestwenty' id='trasAndTransfMenu'>
@@ -85,8 +89,7 @@
 						<li><a onclick="showRight('traspasosPanel');">Traspasos</a></li>
 						<li><a onclick="showRight('transferenciasPanel');">Transferencias</a></li>
                         <li><a onclick="showRight('confirmarOperacionesPanel');">Confirmar operaciones</a></li>
-					</ul>					
-					<br /><br /><br /><br /><br /><br />
+					</ul>
 				</div>
 
                 <div class='leftside padsidestwenty' id='visaMenu'>
@@ -95,8 +98,7 @@
 						<li><a onclick="showRight('movimientosVisaPanel');">Movimientos</a></li>
 						<li><a onclick="showRight('cargosPendientesVisaPanel');">Cargos Pendientes</a></li>
 						<li><a onclick="showRight('bloqueoDesbloqueoVisaPanel');">Bloqueo/Desbloqueo VISA</a></li>
-					</ul>					
-					<br /><br /><br /><br /><br /><br />
+					</ul>
 				</div>
 
                 <div class='leftside padsidestwenty' id='bolsaMenu'>
@@ -105,8 +107,7 @@
 						<li><a onclick="showRight('valoresIbex35Panel');">Valores Ibex-35</a></li>
 						<li><a onclick="showRight('compraBolsaPanel');">Compra</a></li>
 						<li><a onclick="showRight('ventaBolsaPanel');">Venta</a></li>
-					</ul>					
-					<br /><br /><br /><br /><br /><br />
+					</ul>
 				</div>
                 <!--*************** /leftside split view ***************-->
                 
