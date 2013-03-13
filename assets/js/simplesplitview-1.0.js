@@ -1,4 +1,4 @@
-/*
+﻿/*
  * jQuery plugin SimpleSplitView v1.0.1
  * http://newbound.com/simplesplitview
  * March 21, 2012
