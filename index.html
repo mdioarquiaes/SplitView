@@ -27,23 +27,21 @@
 
         <script type="text/javascript">
             function showLeft(leftdiv, rightdiv, dontslideright, dontslideleft) {
-                $("#splitviewcontainer").simplesplitview("showLeft", leftdiv, rightdiv, dontslideright, dontslideleft);
-                window.focus();
+                //$("#splitviewcontainer").simplesplitview("showLeft", leftdiv, rightdiv, dontslideright, dontslideleft);
+                $("#splitviewcontainer").simplesplitview("showLeft", leftdiv, rightdiv, true, true);
             }
 
             function showRight(rightdiv, dontslideright) {
-                $("#splitviewcontainer").simplesplitview("showRight", rightdiv, dontslideright);
-                window.focus();
+                //$("#splitviewcontainer").simplesplitview("showRight", rightdiv, dontslideright);
+                $("#splitviewcontainer").simplesplitview("showRight", rightdiv, true);
             }
 
             function navHome() {
                 $("#splitviewcontainer").simplesplitview("navHome");
-                window.focus();
             }
 
             function navBack() {
                 $("#splitviewcontainer").simplesplitview("navBack");
-                window.focus();
             }
 
             $("#mainpage").live("pageshow", function (event) {
